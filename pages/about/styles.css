@@ -1,3 +1,30 @@
 main {
   background: rgb(212, 98, 172);
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(145, 219, 244);
+}
+
+h4 {
+  
+  color: rgb(165, 42, 138);
+  font-family: 'Nabla', sans-serif;
+  text-align: center;
+}
+
+
+.image-about {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+p {
+  color: rgb(0, 0, 0);   
+  font-family: 'Nabla', sans-serif;
+  font-size: 1.2rem;      
+}

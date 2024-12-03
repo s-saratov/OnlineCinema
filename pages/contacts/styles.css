@@ -1,22 +1,95 @@
-main {
-  font-family: "Playwrite HR Lijeva", Couirer, cursive;
-  font-weight: bold;
-  font-style: normal;
-  color: rgb(251, 0, 255);
+body {
+  font-family: "Playwrite HR Lijeva", Courier, cursive;
+  background-color: rgb(119, 192, 101);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
- 
- 
-  
-    #root::after { 
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      width: 100%; 
-      height: 100%; 
-      background: rgba(210, 207, 212, 0.5); /* Белый наложенный слой с прозрачностью */ 
-      opacity: 0.1; /* Установка значения прозрачности */ 
-      z-index: -1; /* Размещаем слой за контентом #root */ 
-    }
-    
-  }
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support, .feedback-form {
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.support h2, .feedback-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.support p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.feedback-form button {
+  padding: 10px 15px;
+  background-color: #5dba44;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.feedback-form button:hover {
+  background-color: #4c9d3a;
+}
+
+footer {
+  background-color: rgb(24, 24, 138);
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

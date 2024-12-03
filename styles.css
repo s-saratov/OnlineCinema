@@ -2,6 +2,22 @@ main {
   font-family: "Playwrite HR Lijeva", Couirer, cursive;
   font-weight: bold;
   font-style: normal;
-  background-color: rgb(24, 24, 138);
   color: rgb(251, 0, 255);
-}
+
+ 
+ 
+  
+    #root::after { 
+      content: ""; 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background: rgba(210, 207, 212, 0.5); /* Белый наложенный слой с прозрачностью */ 
+      opacity: 0.1; /* Установка значения прозрачности */ 
+      z-index: -1; /* Размещаем слой за контентом #root */ 
+    }
+    
+  }
+

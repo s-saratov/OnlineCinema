@@ -3,24 +3,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link rel="stylesheet" href="../../commonStyles/globalStyles.css" type="text/css" />
-    <link rel="stylesheet" href="../../commonStyles/elements.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../../commonStyles/globalStyles.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./styles.css" type="text/css" />
     <meta charset="UTF-8" />
   </head>
   <body>
     <div id="root">
       <header>
-        <a href='../../index.html' class="company-name">Company name</a>
+        <a href="../../index.html" class="company-logo">
+          <img src="../../images/logo.jpg" alt="MEGAPOLIS Logo" />
+        </a>
         <nav>
-          <a href="../about/">About</a>
-          <a href="./index.html" class="active__link">Contacts</a>
           <a href="../films/">Films</a>
+          <a href="../about/">About</a>
+          <a href="./" class="active__link">Contacts</a>
         </nav>
       </header>
       <main>
         <section class="contacts">
-          <h1>CONTACTS</h1>
+          <h1>Contact us</h1>
           <div class="contacts-content">
             <div class="support">
               <h2>User Support</h2>
@@ -28,10 +33,16 @@
               <p>Email: support@example.com</p>
               <div class="social-links">
                 <a href="https://facebook.com" target="_blank">
-                  <img src="facebook-icon.png" alt="Facebook" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                    alt="Facebook"
+                  />
                 </a>
                 <a href="https://t.me" target="_blank">
-                  <img src="telegram-icon.png" alt="Telegram" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png"
+                    alt="Telegram"
+                  />
                 </a>
               </div>
             </div>
@@ -43,7 +54,12 @@
                 <label for="email">Your Email</label>
                 <input type="email" id="email" name="email" required />
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
                 <button type="submit">Send</button>
               </form>
             </div>
@@ -51,7 +67,7 @@
         </section>
       </main>
       <footer>
-        <div class="company-name">Company name</div>
+        <div class="company-name">2024 MEGAPOLIS.CO</div>
       </footer>
     </div>
   </body>

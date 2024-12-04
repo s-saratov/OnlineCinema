@@ -1,23 +1,28 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 main {
-  font-family: "Playwrite HR Lijeva", Couirer, cursive;
-  font-weight: bold;
-  font-style: normal;
-  color: rgb(251, 0, 255);
+  flex: 1; /* Занимает оставшееся пространство */
+  background: url(./images/megapolis.jpg) center / cover no-repeat;
+  background-attachment: fixed; /* Фон остаётся на месте */
+  display: flex;
+  flex-direction: column;  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Контрастный текст */
+  z-index: 0;
+}
 
- 
- 
-  
-    #root::after { 
-      content: ""; 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      width: 100%; 
-      height: 100%; 
-      background: rgba(210, 207, 212, 0.5); /* Белый наложенный слой с прозрачностью */ 
-      opacity: 0.1; /* Установка значения прозрачности */ 
-      z-index: -1; /* Размещаем слой за контентом #root */ 
-    }
-    
-  }
-
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Полупрозрачное наложение */
+  z-index: -1;
+}

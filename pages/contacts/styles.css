@@ -1,15 +1,6 @@
-body {
-  font-family: "Playwrite HR Lijeva", Courier, cursive;
-  background-color: rgb(119, 192, 101);
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
+main {
+  background-color: #1e1e1e; /* Темный фон */
+  color: #ffffff; /* Белый текст */
 }
 
 .contacts-content {
@@ -22,7 +13,7 @@ h1 {
 
 .support, .feedback-form {
   width: 48%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
   padding: 20px;
   border-radius: 8px;
 }
@@ -68,28 +59,20 @@ h1 {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+  color: #ffffff; /* Белый текст */
 }
 
 .feedback-form button {
   padding: 10px 15px;
-  background-color: #5dba44;
+  background-color: #007bff;
   border: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .feedback-form button:hover {
-  background-color: #4c9d3a;
-}
-
-footer {
-  background-color: rgb(24, 24, 138);
-  text-align: center;
-  padding: 15px 0;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: #0056b3;
 }

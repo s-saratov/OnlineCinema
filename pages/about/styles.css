@@ -1,30 +1,28 @@
-main {
-  background: rgb(152, 112, 138);
-}
-header {
+#root {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  font-size: 20px;
-  background-color: rgb(145, 219, 244);
+  flex-direction: column;
+  height: 100%;
 }
 
-h4 {
-  
-  color: black;
-  font-family: 'Nabla', sans-serif;
+main {
+  flex: 1; /* Занимает оставшееся пространство */
+  background: url(../../images/cinemaHome.jpg) center / cover no-repeat;
+  background-attachment: fixed; /* Фон остаётся на месте */
+  display: flex;
+  flex-direction: column;  justify-content: center;
+  align-items: center;
   text-align: center;
+  color: white; /* Контрастный текст */
+  z-index: 0;
 }
 
-
-.image-about {
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow: hidden;
-
-}
-
-p {
-  color: rgb(0, 0, 0);   
-  font-family: 'Nabla', sans-serif;
-  font-size: 1.2rem;      
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Полупрозрачное наложение */
+  z-index: -1;
 }

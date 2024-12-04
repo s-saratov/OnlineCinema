@@ -1,87 +1,29 @@
 /* Общие стили для html и body */
-
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-html, body {
-  height: 100%; /* Устанавливаем высоту документа */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; /* Вертикальная компоновка для body */
-}
-
-header {
-  background-color: #08041b;
-  padding: 30px;
-}
-
-
-
-footer {
-  background-color: #08041b;
-  padding: 30px;
-}
-
-body {
   font-family: 'Arial', sans-serif;
-  background: url('../../images/fon.jpeg') center / cover no-repeat fixed; /* Фиксируем фон */
-  color: #08041b;
+  background-color: #121212; /* Темный фон */
+  color: #ffffff; /* Белый текст */
 }
 
-#root { 
-  display: flex; 
-  flex-direction: column; 
-  flex: 1; 
-  background: none; /* Убираем фоновое изображение у root */
-  position: relative; /* Добавляем для правильного наложения */ 
-  z-index: 0; /* Устанавливаем базовый z-index */
-}
-
-#root::after { 
-  content: ""; 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
-  background: rgba(210, 207, 212, 0.5); /* Белый наложенный слой с прозрачностью */ 
-  opacity: 0.5; /* Установка значения прозрачности */ 
-  z-index: -1; /* Размещаем слой за контентом #root */ 
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: #08041b;
+  color: #ffffff; /* Белый текст для ссылок */
 }
 
 a:hover {
-  color: #007bff;
+  color: #007bff; /* Синий цвет при наведении */
 }
 
 /* Header */
@@ -89,70 +31,70 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px; /* Только боковые отступы для хедера */
-  background-color: #08041b;
-  box-shadow: 0 2px 4px #08041b;
-  height: 80px; /* Высота хедера */
-  position: fixed; /* Фиксируем хедер */
-  top: 0; /* Фиксация хедера сверху */
-  width: 100%; /* Ширина хедера на 100% */
-  z-index: 1000; /* Высокий z-index для поверхностного слоя */
-  margin: 0; /* Убираем внешние отступы сверху и снизу */
+  padding: 0 10px;
+  background-color: #09051c; /* Темный фон для хедера */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 150px;
 }
 
 .company-logo {
   display: flex;
   align-items: center;
-  height: 100%; /* Высота ссылки совпадает с высотой хедера */
-  padding: 0; /* Убираем внутренние отступы */
-  margin: 0; /* Убираем внешние отступы */
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .company-logo img {
-  height: 100%; /* Логотип растягивается на полную высоту хедера */
-  width: auto; /* Сохраняем пропорции */
+  height: 100%; /* Высота логотипа */
+  width: auto;
   object-fit: contain; /* Гарантируем вписывание изображения */
-  padding: 0; /* Убираем внутренние отступы */
-  margin: 0; /* Убираем внешние отступы */
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
   font-size: 18px;
-  color: white; /* Цвет текста в навигации */
 }
 
 .active__link {
-  color: #007bff;
+  color: #007bff; /* Синий цвет для активной ссылки */
   font-weight: bold;
 }
 
+/* Main */
 main {
-  flex: 1; /* Основное содержимое заполняет свободное пространство */
   padding: 20px;
+  margin-top: 150px; /* Оставляем место для фиксированного хедера */
   text-align: center;
-  margin-top: 100px; /* Оставляем место для фиксированного хедера */
-  margin-bottom: 60px; /* Оставляем место для фиксированного футера */
-  overflow-y: auto; /* Делаем основной контент прокручиваемым */
-  font-family: "Playwrite HR Lijeva", Couirer, cursive;
-  font-weight: bold;
-  font-style: normal;
-  color: rgb(93, 11, 94);
 }
 
-/* Footer */ footer { 
-  background-color: #08041b; /* Цвет фона такой же, как у хедера */ 
-  color: #ffffff; /* Цвет текста белый */ 
-  text-align: center; padding: 20px; 
-  position: fixed; /* Фиксируем футер */ 
-  bottom: 0; /* Фиксация футера снизу */ 
-  width: 100%; /* Ширина футера на 100% */ 
-  z-index: 1000; /* Высокий z-index для поверхностного слоя */ 
-  margin: 0; /* Убираем внешние отступы сверху и снизу */ 
-} 
-footer .company-name 
-{ 
-  font-size: 22px; /* Более крупный шрифт */ 
-  font-weight: bold; 
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.info {
+  font-size: 20px;
+  width: 70%;
+}
+
+/* Footer */
+footer {
+  background-color: #09051c; /* Темный фон для футера */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .company-name {
+  font-size: 18px;
 }

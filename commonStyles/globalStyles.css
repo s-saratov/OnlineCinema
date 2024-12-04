@@ -8,8 +8,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #130b3b; /* Темный фон */
-  color: #ffffff; /* Белый текст */
+  background-color: #130b3b;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -19,18 +19,17 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 a {
   text-decoration: none;
-  color: #ffffff; /* Белый текст для ссылок */
+  color: #ffffff;
 }
 
 a:hover {
-  color: #007bff; /* Синий цвет при наведении */
+  color: #007bff;
 }
 
-/* Root container to use flexbox for layout */
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Устанавливаем минимальную высоту для root */
+  min-height: 100vh;
 }
 
 /* Header */
@@ -39,7 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  background-color: #09051c; /* Темный фон для хедера */
+  background-color: #09051c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -57,9 +56,9 @@ header {
 }
 
 .company-logo img {
-  height: 100%; /* Высота логотипа */
+  height: 100%;
   width: auto;
-  object-fit: contain; /* Гарантируем вписывание изображения */
+  object-fit: contain;
   padding: 0;
   margin: 0;
 }
@@ -70,15 +69,15 @@ nav a {
 }
 
 .active__link {
-  color: #007bff; /* Синий цвет для активной ссылки */
+  color: #007bff;
   font-weight: bold;
 }
 
 /* Main */
 main {
-  flex: 1; /* Main занимает оставшееся пространство */
+  flex: 1;
   padding: 20px;
-  margin-top: 150px; /* Оставляем место для фиксированного хедера */
+  margin-top: 150px;
   text-align: center;
 }
 
